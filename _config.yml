@@ -1,2 +1,5 @@
-include: ["*.md", "*.html"]  # 允许解析所有 Markdown/HTML
-theme: minima  # 使用 Jekyll 默认主题
+defaults:
+  - scope:
+      path: ""   # 对根目录下所有文件生效
+    values:
+      permalink: /:title/   # 动态生成路径，如 /about/
