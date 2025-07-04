@@ -1,5 +1,0 @@
-defaults:
-  - scope:
-      path: ""   # 对根目录下所有文件生效
-    values:
-      permalink: /:title/   # 动态生成路径，如 /about/
