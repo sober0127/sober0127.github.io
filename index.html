@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* 导航栏 */
+        header {
+            background: #1e3c72;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: opacity 0.3s;
+        }
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        /* 首页区域 */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid #eaeaea;
+        }
+        /* 技能表格 */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .skills-table th, .skills-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            .nav-links { margin-top: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页头 -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1>个人主页</h1>
+                <div class="nav-links">
+                    <a href="#about">关于我</a>
+                    <a href="#skills">技能</a>
+                    <a href="#contact">联系</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首页 -->
+    <section class="hero">
+        <div class="container">
+            <img src="profile.jpg" alt="个人照片" class="profile-img">
+            <h2>李明 | 前端工程师</h2>
+            <p>专注用户体验与高性能Web开发</p>
+        </div>
+    </section>
+
+    <!-- 技能表格 -->
+    <section id="skills" class="container">
+        <h2>技术能力</h2>
+        <table class="skills-table">
+            <tr>
+                <th>技术领域</th>
+                <th>掌握技术</th>
+                <th>熟练度</th>
+            </tr>
+            <tr>
+                <td>前端开发</td>
+                <td>HTML5/CSS3/JavaScript</td>
+                <td>精通</td>
+            </tr>
+            <tr>
+                <td>前端框架</td>
+                <td>React/Vue</td>
+                <td>熟练</td>
+            </tr>
+            <tr>
+                <td>UI设计</td>
+                <td>Figma/Photoshop</td>
+                <td>良好</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 页脚 -->
+    <footer style="background:#333; color:white; text-align:center; padding:20px; margin-top:40px">
+        <p>© 2025 个人主页 | 保留所有权利</p>
+    </footer>
+</body>
+</html>
