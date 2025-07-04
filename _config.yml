@@ -1,0 +1,2 @@
+include: ["*.md", "*.html"]  # 允许解析所有 Markdown/HTML
+theme: minima  # 使用 Jekyll 默认主题
